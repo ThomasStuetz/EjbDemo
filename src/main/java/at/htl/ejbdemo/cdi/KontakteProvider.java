@@ -1,5 +1,6 @@
 package at.htl.ejbdemo.cdi;
 
+import javax.enterprise.context.Dependent;
 import javax.enterprise.inject.Vetoed;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;

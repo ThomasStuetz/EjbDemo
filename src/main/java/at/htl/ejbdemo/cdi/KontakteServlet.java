@@ -11,8 +11,13 @@ import java.io.IOException;
 @WebServlet("/names")
 public class KontakteServlet extends HttpServlet {
 
+    /**
+     * Auswahl der injizierten Bean entweder mit
+     *   - @Vetoed oder
+     *   - Qualifier @Test
+     */
     @Inject
-    private TestKontakteProvider kontakteProvider;
+    private KontakteHandler kontakteProvider;
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp)
